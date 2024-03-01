@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>Поиск книг - добавление</title>
+</head>
+<body style="background: #ffe5ea">
+<h1>Все книги (<span th:text="${#lists.size(bookData)}">size</span>)</h1>
+
+<p th:each="book : ${bookData}">
+    <span th:text="${book.name}"></span>
+</p>
+</body>
+</html>
