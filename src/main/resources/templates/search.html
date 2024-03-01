@@ -1,0 +1,12 @@
+<html>
+<head>
+    <title>Поиск книг - поиск</title>
+</head>
+<body style="background: #ffe5ea">
+<h1>Поиск по названию: <span th:text="${searchRequest}">searchRequest</span></h1>
+
+<p th:each="book : ${bookData}">
+    <span th:text="${book.name}"></span>
+</p>
+</body>
+</html>
